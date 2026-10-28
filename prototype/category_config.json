@@ -1,0 +1,19 @@
+{
+  "category": "Commercial Solar Installation",
+  "version": "1.0",
+  "eligibility_checks": [
+    {"field": "licence_by_bidder", "operator": "eq", "value": true, "failure": "Bidder-held Ontario electrical contractor licence is not established."},
+    {"field": "wsib", "operator": "eq", "value": true, "failure": "WSIB clearance requirement not met."},
+    {"field": "liability_cad", "operator": "min", "value": 5000000, "failure": "Commercial liability cover below required minimum."},
+    {"field": "price_cad", "operator": "max", "value": 260000, "failure": "Quoted total exceeds the project budget ceiling."},
+    {"field": "weeks", "operator": "max", "value": 16, "failure": "Proposed completion exceeds the project schedule ceiling."}
+  ],
+  "criteria": [
+    {"id": "experience", "weight": 0.30, "method": "ratio_to_target", "field": "eligible_project_count", "target": 14},
+    {"id": "price", "weight": 0.25, "method": "ratio_to_batch_min", "field": "price_cad"},
+    {"id": "timeline", "weight": 0.15, "method": "ratio_to_batch_min", "field": "weeks"},
+    {"id": "warranty", "weight": 0.15, "method": "mean_of_capped_targets", "fields": ["panel_warranty_years", "workmanship_warranty_years"], "targets": [25, 12]},
+    {"id": "team", "weight": 0.15, "method": "fraction_true", "fields": ["named_lead", "crew_details", "safety_plan", "monitoring_plan"]}
+  ],
+  "lookback_assumption": "Counts since 2021 accepted at year-level for illustration; exact dates need pre-award verification"
+}

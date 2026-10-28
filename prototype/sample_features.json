@@ -1,0 +1,37 @@
+[
+  {
+    "proposal": "A", "licence_by_bidder": true, "wsib": true, "liability_cad": 5000000,
+    "eligible_project_count": 14, "experience_date_ambiguity": false,
+    "price_cad": 238000, "weeks": 12, "panel_warranty_years": 25,
+    "workmanship_warranty_years": 10, "named_lead": true, "crew_details": true,
+    "safety_plan": true, "monitoring_plan": true, "injection_detected": false
+  },
+  {
+    "proposal": "B", "licence_by_bidder": false, "wsib": true, "liability_cad": 5000000,
+    "eligible_project_count": 6, "experience_date_ambiguity": false,
+    "price_cad": 189500, "weeks": 10, "panel_warranty_years": 25,
+    "workmanship_warranty_years": 5, "named_lead": false, "crew_details": false,
+    "safety_plan": false, "monitoring_plan": false, "injection_detected": false
+  },
+  {
+    "proposal": "C", "licence_by_bidder": true, "wsib": true, "liability_cad": 5000000,
+    "eligible_project_count": null, "experience_date_ambiguity": true,
+    "price_cad": 244000, "weeks": 14, "panel_warranty_years": 25,
+    "workmanship_warranty_years": 10, "named_lead": true, "crew_details": true,
+    "safety_plan": false, "monitoring_plan": false, "injection_detected": true
+  },
+  {
+    "proposal": "D", "licence_by_bidder": true, "wsib": true, "liability_cad": 5000000,
+    "eligible_project_count": 11, "experience_date_ambiguity": false,
+    "price_cad": 231000, "weeks": null, "panel_warranty_years": 25,
+    "workmanship_warranty_years": 10, "named_lead": true, "crew_details": false,
+    "safety_plan": true, "monitoring_plan": false, "injection_detected": false
+  },
+  {
+    "proposal": "E", "licence_by_bidder": true, "wsib": true, "liability_cad": 5000000,
+    "eligible_project_count": 8, "experience_date_ambiguity": false,
+    "price_cad": 242500, "weeks": 13, "panel_warranty_years": 25,
+    "workmanship_warranty_years": 12, "named_lead": true, "crew_details": true,
+    "safety_plan": true, "monitoring_plan": true, "injection_detected": false
+  }
+]
